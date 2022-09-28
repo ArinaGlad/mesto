@@ -5,13 +5,7 @@
   font-display: swap;
   src: url("./Inter-Regular.woff2") format("woff2"), url("./Inter-Regular.woff") format("woff");
 }
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("./Inter-Bold.woff2") format("woff2"), url("./Inter-Bold.woff") format("woff");
-}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -19,15 +13,11 @@
   font-display: swap;
   src: url("./Inter-Medium.woff2") format("woff2"), url("./Inter-Medium.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./Montserrat-SemiBold.woff2") format("woff2"), /* Super Modern Browsers */ url("./Montserrat-SemiBold.woff") format("woff"); /* Modern Browsers */
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./Montserrat-Bold.woff2") format("woff2"), /* Super Modern Browsers */ url("./Montserrat-Bold.woff") format("woff"); /* Modern Browsers */
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("Inter-Black.woff2?v=3.19") format("woff2"), url("Inter-Black.woff?v=3.19") format("woff");
 }
