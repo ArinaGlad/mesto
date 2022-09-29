@@ -16,10 +16,10 @@
             <section class="profile">
                 <img class="profile__avatar" src="images/avatar.jpg" alt="фото владельца профиля">
                 <div class="profile__text">
-                    <h1 class="profile__header">Жак-Ив Кусто</h1>
+                    <h1 class="profile__header">Жак-Ив Кусто<button class="profile__edit"></button></h1>
                     <p class="profile__subheader">Исследователь океана</p>
                 </div>
-                <button class="button">&#43;</button>
+                <button class="button"></button>
             </section>
             <section class="elements">
                 <div class="elements__item">
@@ -71,5 +71,16 @@
         </footer>
     </div>
     
+    <div class="popup">
+        <form class="popup__container" action="#">
+            <img class="popup__close" src="images/logo/Close Icon.svg" alt="закрытие">
+            <h3 class="popup__header">Редактировать профиль</h3>
+            <input name="name" required placeholder="Жак-Ив Кусто" type="text" class="popup__str"> 
+            <input name="descr" required placeholder="Исследователь океана" type="text" class="popup__str"> 
+            <button class="popup__button">Сохранить</button>
+        </form>
+    </div>
+        
+    <script src="js/script.js"></script>
 </body>
 </html>
