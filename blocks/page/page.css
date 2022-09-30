@@ -1,8 +1,23 @@
 .page {
-    max-width: 1280px;
     background-color: #000000;
-    padding: 0 15.2%;
+    max-width: 880px;
     margin: 0 auto;
     box-sizing: border-box;
-    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .page {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page {
+        padding: 0;
+    }
 }

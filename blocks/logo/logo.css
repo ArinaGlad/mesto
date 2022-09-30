@@ -2,3 +2,11 @@
     padding-bottom: 38px;
     max-width: 142px;
 }
+
+@media screen and (max-width: 500px) {
+    .logo {
+        padding-bottom: 27px;
+        max-width: 104px;
+        padding-left: 25px;
+    }
+}

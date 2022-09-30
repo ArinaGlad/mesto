@@ -8,8 +8,24 @@
     box-sizing: border-box;
     padding: 0;
     background: url('../../images/logo/plus.svg') center center/ 22px 22px no-repeat;
+    cursor: pointer;
 }
 
 .button:hover {
     opacity: 0.6;
+}
+
+@media screen and (max-width: 700px) {
+    .button {
+        margin: 0 auto;
+        display: block;
+        min-width: 282px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        background-size: 16px 16px;
+    }
 }

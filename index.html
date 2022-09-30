@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
+    <script defer src="./js/script.js"></script>
 </head>
 <body class="body">
     <div class="page">
         <header class="header">
-            <img class="logo" src="images/logo/header__logo.svg" alt="логотип">
+            <img class="logo" src="./images/logo/header__logo.svg" alt="логотип">
         </header>
+
         <main class="main">
             <section class="profile">
                 <img class="profile__avatar" src="images/avatar.jpg" alt="фото владельца профиля">
                 <div class="profile__text">
-                    <h1 class="profile__header">Жак-Ив Кусто<button class="profile__edit"></button></h1>
+                    <div class="profile__text-wrap">
+                        <h1 class="profile__header">Жак-Ив Кусто</h1>
+                        <button class="profile__edit"></button>
+                    </div>
                     <p class="profile__subheader">Исследователь океана</p>
                 </div>
                 <button class="button"></button>
             </section>
+
             <section class="elements">
                 <div class="elements__item">
                     <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
@@ -46,7 +52,7 @@
                 <div class="elements__item">
                     <img class="elements__img" src="images/elbrus.jpg" alt="Карачаево-Черкесская республика">
                     <div class="elements__text">
-                        <h2 class="elements__descr">Карачаевск</h2>
+                        <h2 class="elements__descr">Карачаево-Черкесская</h2>
                         <div class="like"></div>
                     </div>
                 </div>
@@ -66,6 +72,7 @@
                 </div>
             </section>
         </main>
+
         <footer class="footer">
             <p class="footer__copyright">© 2022 Mesto Russia</p>
         </footer>
@@ -75,12 +82,10 @@
         <form class="popup__container" action="#">
             <img class="popup__close" src="images/logo/Close Icon.svg" alt="закрытие">
             <h3 class="popup__header">Редактировать профиль</h3>
-            <input name="name" required placeholder="Жак-Ив Кусто" type="text" class="popup__str"> 
-            <input name="descr" required placeholder="Исследователь океана" type="text" class="popup__str"> 
+            <input name="name" required placeholder="Имя" type="text" class="popup__str" value="Имя"> 
+            <input name="job" required placeholder="работа" type="text" class="popup__str" value="Работа"> 
             <button class="popup__button">Сохранить</button>
         </form>
     </div>
-        
-    <script src="js/script.js"></script>
 </body>
 </html>

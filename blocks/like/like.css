@@ -1,9 +1,11 @@
 .like {
-    background: url('../../images/logo/like.svg') center center/contain;
+    background: url('../../images/logo/like.svg') right center/22px 19px no-repeat;
     width: 22px;
     height: 19px;
     cursor: pointer;
     transition: 0.4s all;
+    padding-left: 10px;
+
 }
 
 .like:hover {

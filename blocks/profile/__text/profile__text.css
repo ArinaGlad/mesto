@@ -1,4 +1,21 @@
 .profile__text {
     padding-left: 30px;
     margin-right: auto;
+    width: 38%;
 }
+
+@media screen and (max-width: 700px) {
+    .profile__text {
+        margin-right: 0;
+        padding: 26px 0 32px 0;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile__text {
+        width: 68%;
+    }
+}
+
