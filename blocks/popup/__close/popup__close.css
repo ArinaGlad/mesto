@@ -3,4 +3,10 @@
     width: 32px;
     top: -40px;
     right: -40px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.popup__close:hover {
+    opacity: 0.6;
 }
