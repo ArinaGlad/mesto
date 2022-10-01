@@ -1,4 +1,4 @@
-const edit = document.querySelector('.profile__edit');
+const editAuthor = document.querySelector('.profile__edit');
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.popup__close');
 // Находим форму в DOM
@@ -9,8 +9,10 @@ const jobInput = document.querySelector('input[name="job"]');
 const profileName = document.querySelector('.profile__header');
 const profileJob = document.querySelector('.profile__subheader');
 
-edit.addEventListener('click', function() {
+editAuthor.addEventListener('click', function() {
     popup.classList.add('popup_opened');
+    nameInput.value = profileName.textContent;
+    jobInput.value = profileJob.textContent;
 });
 
 closePopup.addEventListener('click', function() {
