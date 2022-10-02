@@ -1,7 +1,12 @@
 .profile__text-wrap {
     display: flex;
     align-items: center;
-    position: relative;
     width: 100%;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+    .profile__text-wrap {
+        justify-content: flex-end;
+    }
 }
