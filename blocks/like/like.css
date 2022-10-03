@@ -1,11 +1,12 @@
 .like {
-    background: url('../../images/logo/like.svg') right center/22px 19px no-repeat;
-    width: 22px;
+    background: url('../../images/logo/like.svg') right center/contain no-repeat;
+    min-width: 24px;
     height: 19px;
     cursor: pointer;
     transition: 0.4s all;
-    padding-left: 10px;
-
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .like:hover {

@@ -5,14 +5,14 @@
     line-height: 29px;
     color: #000000;
     margin: 0;
-    padding: 0 0 14px 0;
+    padding: 0 0 45px 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .popup__header {
         font-size: 18px;
         line-height: 22px;
-        padding: 0 0 43px 0;
+        padding: 0 0 74px 0;
     }
 }
 

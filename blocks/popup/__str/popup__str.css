@@ -7,10 +7,18 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    
+    margin-bottom: 30px;
+    padding: 0;
+
 }
 
 
 .popup__str::placeholder {
     color: #585858;
+}
+
+@media screen and (max-width: 550px) {
+    .popup__str {
+        margin-bottom: 27px;
+    }
 }

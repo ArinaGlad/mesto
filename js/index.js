@@ -13,11 +13,11 @@ editAuthor.addEventListener('click', function() {
     jobInput.value = profileJob.textContent;
 });
 
-popup.addEventListener('click', (event) => {
-    if (!formElement.contains(event.target) || closePopup.contains(event.target)) {
+function formClosure () {
         popup.classList.remove('popup_opened');
-    }
-});
+}
+
+closePopup.addEventListener('click', formClosure);
 
 function formSubmitHandler (evt) {
     evt.preventDefault(); 

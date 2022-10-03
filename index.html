@@ -27,48 +27,48 @@
             </section>
 
             <section class="elements">
-                    <div class="elements__item">
+                    <article class="elements__item">
                         <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Карачаево-Черкесская</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
-                    <div class="elements__item">
+                    </article>
+                    <article class="elements__item">
                         <img class="elements__img" src="images/elbrus.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Гора Эльбрус</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
-                    <div class="elements__item">
+                    </article>
+                    <article class="elements__item">
                         <img class="elements__img" src="images/dombay.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Домбай</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
-                    <div class="elements__item">
+                    </article>
+                    <article class="elements__item">
                         <img class="elements__img" src="images/elbrus.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Гора Эльбрус</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
-                    <div class="elements__item">
+                    </article>
+                    <article class="elements__item">
                         <img class="elements__img" src="images/dombay.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Домбай</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
-                    <div class="elements__item">
+                    </article>
+                    <article class="elements__item">
                         <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
                         <div class="elements__text">
                             <h2 class="elements__descr">Карачаево-Черкесская</h2>
-                            <div class="like"></div>
+                            <button type="button" class="like"></button>
                         </div>
-                    </div>
+                    </article>
                 
             </section>
         </main>
@@ -79,13 +79,15 @@
     </div>
     
     <div class="popup">
-        <form class="popup__container" action="#">
-            <img class="popup__close" src="images/logo/Close_Icon.svg" alt="закрытие">
-            <h3 class="popup__header">Редактировать профиль</h3>
-            <input name="name" required placeholder="введите имя" type="text" class="popup__str" value="Имя"> 
-            <input name="job" required placeholder="введите работу" type="text" class="popup__str" value="Работа"> 
-            <button class="popup__button">Сохранить</button>
-        </form>
+        <div class="popup__container">
+            <form name="popup" class="popup__form" action="#">
+                <button type="button" class="popup__close"></button>
+                <h3 class="popup__header">Редактировать профиль</h3>
+                <input name="name" required placeholder="введите имя" type="text" class="popup__str" value="Имя"> 
+                <input name="job" required placeholder="введите работу" type="text" class="popup__str" value="Работа"> 
+                <button class="popup__button">Сохранить</button>
+            </form>
+        </div>
     </div>
     <script src="./js/index.js"></script>
 </body>
