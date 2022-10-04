@@ -10,5 +10,5 @@
 }
 
 .like:hover {
-    background-image: url('../../images/logo/like_hover.svg');
+    opacity: 0.5;
 }

@@ -19,11 +19,11 @@
                 <div class="profile__text">
                     <div class="profile__text-wrap">
                         <h1 class="profile__header">Жак-Ив Кусто</h1>
-                        <button class="profile__edit"></button>
+                        <button type="button" class="profile__edit"></button>
                     </div>
                     <p class="profile__subheader">Исследователь океана</p>
                 </div>
-                <button class="button"></button>
+                <button type="button" class="button"></button>
             </section>
 
             <section class="elements">
@@ -80,12 +80,12 @@
     
     <div class="popup">
         <div class="popup__container">
+            <button type="button" class="popup__close"></button>
             <form name="popup" class="popup__form" action="#">
-                <button type="button" class="popup__close"></button>
                 <h3 class="popup__header">Редактировать профиль</h3>
                 <input name="name" required placeholder="введите имя" type="text" class="popup__str" value="Имя"> 
                 <input name="job" required placeholder="введите работу" type="text" class="popup__str" value="Работа"> 
-                <button class="popup__button">Сохранить</button>
+                <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
     </div>
