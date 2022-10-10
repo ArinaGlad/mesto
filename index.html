@@ -27,49 +27,16 @@
             </section>
 
             <section class="elements">
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Карачаево-Черкесская</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/elbrus.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Гора Эльбрус</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/dombay.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Домбай</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/elbrus.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Гора Эльбрус</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/dombay.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Домбай</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                    <article class="elements__item">
-                        <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
-                        <div class="elements__text">
-                            <h2 class="elements__descr">Карачаево-Черкесская</h2>
-                            <button type="button" class="like"></button>
-                        </div>
-                    </article>
-                
+                    <template id="card">
+                        <article class="elements__item">
+                            <button type="button" class="elements__delete"></button>
+                            <img class="elements__img" src="images/karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесская республика">
+                            <div class="elements__text">
+                                <h2 class="elements__descr">Карачаево-Черкесская</h2>
+                                <button type="button" class="like"></button>
+                            </div>
+                        </article>
+                    </template> 
             </section>
         </main>
 
@@ -78,16 +45,35 @@
         </footer>
     </div>
     
-    <div class="popup">
+    <div class="popup popup__autor">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
-            <form name="popup" class="popup__form" action="#">
+            <form name="popup" class="popup__form-autor" action="#">
                 <h3 class="popup__header">Редактировать профиль</h3>
                 <input name="name" required placeholder="введите имя" type="text" class="popup__str" value="Имя"> 
                 <input name="job" required placeholder="введите работу" type="text" class="popup__str" value="Работа"> 
                 <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
+    </div>
+    <div class="popup popup__mesto">
+        <div class="popup__container">
+            <button type="button" class="popup__close"></button>
+            <form name="popup" class="popup__form-mesto" action="#">
+                <h3 class="popup__header">Новое место</h3>
+                <input name="place" required placeholder="Название" type="text" class="popup__str" value=""> 
+                <input name="link" required placeholder="Ссылка на картинку" type="text" class="popup__str" value=""> 
+                <button type="submit" class="popup__button">Создать</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup__figure-overlay">
+        <figure class="popup__figure">
+            <button type="button" class="popup__close"></button>
+            <img class="popup__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"
+                alt="Elephant at sunset">
+            <figcaption class="popup__figure-text">An elephant at sunset</figcaption>
+        </figure>
     </div>
     <script src="./js/index.js"></script>
 </body>
