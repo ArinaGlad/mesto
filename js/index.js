@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
       const editAuthor = document.querySelector('.profile__edit');
-      const popupAutor = document.querySelector('.popup__autor');
-      const popupMesto = document.querySelector('.popup__mesto');
+      const popupAutor = document.querySelector('.popup-autor');
+      const popupMesto = document.querySelector('.popup-mesto');
       const closersPopup = document.querySelectorAll('.popup__close');
       const formElementAutor = document.querySelector('.popup__form-autor');
       const formElementMesto = document.querySelector('.popup__form-mesto');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const sectionElements = document.querySelector('.elements');
       const buttonAdd = document.querySelector('.button');
       const cardTemplate = document.querySelector('#card').content;
-      const popupImage = document.querySelector('.popup__figure-overlay');
+      const popupImage = document.querySelector('.popup-figure-overlay');
 
 
 // открытие попапа редактирования данных автора
