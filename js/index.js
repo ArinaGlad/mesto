@@ -51,13 +51,17 @@ function createCard (name, link) {
   cardElementImg.src = link;
   cardElementImg.alt = name;
   cardElement.querySelector('.elements__descr').textContent = name;
-  sectionElements.prepend(cardElement);
+  return cardElement;
+}
+
+function renderCard (element) {
+  sectionElements.prepend(element);
 }
 
 // построение карточек из массива
 
 initialCards.forEach(item => {
-  createCard(item.name, item.link);
+  renderCard(createCard(item.name, item.link));
 });
 
 // Открытие попапа
@@ -114,7 +118,7 @@ sectionElements.addEventListener('click', (event) => {
 
 function addCard (event) {
     event.preventDefault(); 
-    createCard(placeInput.value, linkInput.value);
+    renderCard(createCard(placeInput.value, linkInput.value));
     closePopup(popupMesto);
     linkInput.value = '';
     placeInput.value = '';
