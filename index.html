@@ -48,10 +48,12 @@
     <div class="popup popup-autor">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
-            <form name="autor" class="popup__form-autor" action="#">
+            <form name="autor" class="popup__form-autor" action="#" novalidate>
                 <h3 class="popup__header">Редактировать профиль</h3>
-                <input name="name" required placeholder="введите имя" type="text" class="popup__str" value="Имя"> 
-                <input name="job" required placeholder="введите работу" type="text" class="popup__str" value="Работа"> 
+                <input name="name" id="name-input" required placeholder="введите имя" type="text" class="popup__str" value="Имя" minlength="2" maxlength="40"> 
+                <span class="popup__str-error name-input-error"></span>
+                <input name="job" id="job-input" required placeholder="введите работу" type="text" class="popup__str" value="Работа" minlength="2" maxlength="200">
+                <span class="popup__str-error job-input-error"></span> 
                 <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
@@ -59,10 +61,10 @@
     <div class="popup popup-mesto">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
-            <form name="place" class="popup__form-mesto" action="#">
+            <form name="place" class="popup__form-mesto" action="#" novalidate>
                 <h3 class="popup__header">Новое место</h3>
-                <input name="place" required placeholder="Название" type="text" class="popup__str" value=""> 
-                <input name="link" required placeholder="Ссылка на картинку" type="text" class="popup__str" value=""> 
+                <input name="place" required placeholder="Название" type="text" class="popup__str" value="" minlength="2" maxlength="30"> 
+                <input name="link" required placeholder="Ссылка на картинку" type="url" class="popup__str" value=""> 
                 <button type="submit" class="popup__button">Создать</button>
             </form>
         </div>

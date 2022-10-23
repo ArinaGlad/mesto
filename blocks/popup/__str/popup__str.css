@@ -9,6 +9,7 @@
     color: #000000;
     margin-bottom: 30px;
     padding: 0;
+    outline: none;
 
 }
 
@@ -16,6 +17,11 @@
 .popup__str::placeholder {
     color: #585858;
 }
+
+.popup__str:focus {
+    outline: 2px solid rgb(100, 193, 251);
+}
+
 
 @media screen and (max-width: 550px) {
     .popup__str {
