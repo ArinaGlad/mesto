@@ -1,7 +1,12 @@
 .popup__str-error {
-    visibility: hidden;
+    opacity: 0;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 13px;
     color: #FF0000;
+    display: block;
+    min-height: 25px;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.3s;
 }

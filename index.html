@@ -48,7 +48,7 @@
     <div class="popup popup-autor">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
-            <form name="autor" class="popup__form-autor" action="#" novalidate>
+            <form name="autor" class="form popup__form-autor" action="#" novalidate>
                 <h3 class="popup__header">Редактировать профиль</h3>
                 <input name="name" id="name-input" required placeholder="введите имя" type="text" class="popup__str" value="Имя" minlength="2" maxlength="40"> 
                 <span class="popup__str-error name-input-error"></span>
@@ -61,10 +61,12 @@
     <div class="popup popup-mesto">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
-            <form name="place" class="popup__form-mesto" action="#" novalidate>
+            <form name="place" class="form popup__form-mesto" action="#" novalidate>
                 <h3 class="popup__header">Новое место</h3>
-                <input name="place" required placeholder="Название" type="text" class="popup__str" value="" minlength="2" maxlength="30"> 
-                <input name="link" required placeholder="Ссылка на картинку" type="url" class="popup__str" value=""> 
+                <input name="place" id="place-input" required placeholder="Название" type="text" class="popup__str" value="" minlength="2" maxlength="30">
+                <span class="popup__str-error place-input-error"></span> 
+                <input name="link" id="link-input" required placeholder="Ссылка на картинку" type="url" class="popup__str" value=""> 
+                <span class="popup__str-error link-input-error"></span>
                 <button type="submit" class="popup__button">Создать</button>
             </form>
         </div>
@@ -78,5 +80,6 @@
         </figure>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/validate.js"></script>
 </body>
 </html>

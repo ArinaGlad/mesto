@@ -43,35 +43,6 @@ const initialCards = [
       const popupImage = document.querySelector('.popup-figure-overlay');
       const popupImageImg = document.querySelector('.popup__img');
       const popupImageText = document.querySelector('.popup__figure-text');
-      const formInput = document.querySelector('.popup__str');
-      const formError = document.querySelector(`.${nameInput.id}-error`);
-
-console.log(`.${nameInput.id}-error`);
-
-
-
-const showInputError = (element, errorMessage) => {
-    element.classList.add('popup__str_type_error');
-    formError.classList.add('popup__str-error_active');
-    formError.textContent = errorMessage;
-};
-      
-
-const hideInputError = (element) => {
-    element.classList.remove('popup__str_type_error');
-    formError.classList.remove('popup__str-error_active');
-    formError.textContent = '';
-};
-      
-const isValid = () => {
-  if (!formInput.validity.valid) {
-    showInputError(formInput, formInput.validationMessage);
-  } else {
-    hideInputError(formInput);
-  }
-};
-
-formInput.addEventListener('input', isValid); 
 
 // создание карточки
 
@@ -97,6 +68,7 @@ initialCards.forEach(item => {
 // Открытие попапа
 function openPopup (popup) {
     popup.classList.add('popup_opened');
+    document.addEventListener('keydown', closingByEscape);
 }
 
 // нажатие на кнопку редактирования данных автора
@@ -117,6 +89,7 @@ buttonAdd.addEventListener('click', () => {
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closingByEscape);
 }
 
 switchesPopup.forEach((item) =>
@@ -124,16 +97,18 @@ switchesPopup.forEach((item) =>
     closePopup(event.target.closest('.popup_opened'));
 }));
 
+
 popupShading.forEach((item) =>
   item.addEventListener('click', (event) => {
     closePopup(event.target);
 }));
 
-document.addEventListener('keydown', (event) => {
+
+function closingByEscape(event) {
   if (event.key === 'Escape') {
     closePopup(document.querySelector('.popup_opened'));
   }
-});
+}
 
 //изменение данных автора
 

@@ -45,3 +45,4 @@
 @import url(../blocks/popup/__str-error/popup__str-error.css);
 @import url(../blocks/popup/__str-error/_active/popup__str-error_active.css);
 @import url(../blocks/popup/__str/_type/popup__str_type_error.css);
+@import url(../blocks/popup/__button/_inactive/popup__button_inactive.css);
