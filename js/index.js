@@ -102,8 +102,6 @@ function submitProfileForm(event) {
   closePopup(popupAutor);
 }
 
-formElementAutor.addEventListener("submit", submitProfileForm);
-
 //лайки
 
 function handleLikeClick(item) {
@@ -128,8 +126,6 @@ function addCard(event) {
   );
 }
 
-formElementMesto.addEventListener("submit", addCard);
-
 // удаление карточки
 
 function removeCardItem(item) {
@@ -146,3 +142,6 @@ function handleImgClick(event) {
   popupImageText.textContent =
     event.target.nextElementSibling.firstElementChild.textContent;
 }
+
+formElementMesto.addEventListener("submit", addCard);
+formElementAutor.addEventListener("submit", submitProfileForm);
